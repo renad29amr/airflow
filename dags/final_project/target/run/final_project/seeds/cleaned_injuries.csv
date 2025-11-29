@@ -1,0 +1,11 @@
+
+    
+    
+    truncate table "dev"."main"."cleaned_injuries";
+    -- dbt seed --
+    
+          COPY "dev"."main"."cleaned_injuries" FROM '/home/renad/airflow/dags/final_project/seeds/cleaned_injuries.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        
+
+;
+  
