@@ -1,4 +1,4 @@
-
+ 
 
 SELECT
     Club        AS club,
@@ -12,5 +12,4 @@ SELECT
                 '%m/%Y'
              )
     END AS return_date
-
 FROM "dev"."main"."cleaned_injuries"

@@ -9,9 +9,8 @@
     as (
       
 
-
-
 SELECT
+    
     club_name AS club,
     club_url AS club_url,
     Pts AS points,

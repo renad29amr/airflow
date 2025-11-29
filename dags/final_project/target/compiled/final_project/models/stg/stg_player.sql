@@ -1,15 +1,15 @@
-
-
-SELECT
-    MD5(LOWER(TRIM(Player)) || Squad) AS player_id,
+ 
+SELECT 
+    MD5(LOWER(TRIM(Player)) || Squad || Nation) AS player_id,
     Player AS player,
     Nation AS nation,
     Squad AS club,
-    Pos AS position,
+    pos As position,
     Age AS age,
+    Born AS born,
     MP AS mp,
     Starts AS starts,
-    Min AS minutes,
+    Min AS min,
     "90s" AS ninety_s,
     Gls AS gls,
     Ast AS ast,
@@ -133,4 +133,4 @@ SELECT
     Won AS won,
     Lost_stats_misc AS lost_stats_misc,
     "Won%" AS won_percent
-FROM "dev"."main"."cleaned_player"
+     FROM "dev"."main"."cleaned_player"
